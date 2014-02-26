@@ -282,8 +282,5 @@ public View getView(int position, View convertView, ViewGroup parent) {
 
 ---
 
-#关于作者michael
-* 个人博客：[http://www.yangfuhai.com](http://www.yangfuhai.com)
-* afinal捐助：[http://me.alipay.com/yangfuhai](http://me.alipay.com/yangfuhai) （为了感谢捐助者，michael将会把捐助者将公布在afinal官方网站[afinal.org](http://www.afinal.org)上,不让公布的同学说明下）
-* afinal交流QQ群 ： 192341294
+
 
