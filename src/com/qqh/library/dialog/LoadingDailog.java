@@ -1,12 +1,12 @@
 package com.qqh.library.dialog;
 
+import com.qqh.library.R;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
-import  net.tsz.afinal.R;
-
 public class LoadingDailog {
 
 	private static Dialog mDialog;

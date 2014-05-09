@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- TabsPager 布局 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
     <TabHost
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/tabHost" android:layout_gravity="center_horizontal">
+        android:id="@+id/tabHost"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/line_vertical" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+
+            <ImageView
+                android:id="@+id/ivCursor"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_cursor" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/tab_line" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="vertical">
-            <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-            </TabWidget>
-            <android.support.v4.view.ViewPager
-                    android:id="@+id/viewPager"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                />
-            <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:visibility="gone"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-            </FrameLayout>
+                android:background="@android:color/white" />
         </LinearLayout>
     </TabHost>
 

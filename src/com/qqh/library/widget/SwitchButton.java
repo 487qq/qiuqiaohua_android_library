@@ -1,5 +1,7 @@
 package com.qqh.library.widget;
 
+import com.qqh.library.R;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.*;
@@ -8,7 +10,6 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.ViewParent;
 import android.widget.CheckBox;
-import net.tsz.afinal.R;
 
 public class SwitchButton extends CheckBox {
     private Paint mPaint;
