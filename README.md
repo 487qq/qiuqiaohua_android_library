@@ -3,6 +3,7 @@
 2014.5.14
 ----------------
 注意！！！废弃TabsPager和TabViewPager 改用模拟viewpagerindicator写的com.qqh.library.widget.TabPageIndicator
+
 加入画线条的widget(支持自定义线条类型（实现，虚线），自定义线条颜色，自定义线条方向)
 
 2014.5.9
