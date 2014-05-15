@@ -113,7 +113,7 @@ public class DashedLineView extends View
         super.onDraw(canvas);
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(mLineType!=-1?mLineColor:Color.parseColor(DEFAULTLINECOLOR));
+        paint.setColor(mLineColor!=-1?mLineColor:Color.parseColor(DEFAULTLINECOLOR));
         Path path = new Path();
         switch (mOrientation)
         {
